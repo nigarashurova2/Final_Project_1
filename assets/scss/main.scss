@@ -1,0 +1,14 @@
+@use "./components/reset";
+@use "./components/colors";
+@use "./components/breakpoints";
+@use "./components/mixin";
+@use "./components/navigation";
+@use "./components/header";
+@use "./components/topCategories";
+@use "./components/sellingCourses";
+@use "./components/featureCourses";
+@use "./components/recentCourses";
+@import "./components/topInstructor";
+@import "./components/cta";
+@import "./components/companies";
+@import "./components/footer";

@@ -1,0 +1,90 @@
+@import "./mixin";
+@import "./breakpoints";
+
+.header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(180deg, rgba(240, 242, 245, 0.00) 0.02%, #F0F2F5 220.8%);
+    @include sm{
+        flex-direction: column;
+        padding: 20px 0 ;
+    }
+   
+    &__main_content{
+        width: 50%;
+        padding-left: 140px;
+        @include xl{
+            padding-left: 30px !important;
+          
+        }
+        @include md{
+            padding-left: 20px;
+          
+        }
+       
+        @include sm{
+            width: 100%;
+            padding-left: 0px !important;
+            order: 2;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+        }
+        &__box{
+            max-width: 80%;
+        }
+    }
+    &__title{
+        color: var(--gray-900, #1D2026);
+        font-family: Inter;
+        font-size: 42px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 50px;
+        @include lg{
+            font-size: 32px;
+            line-height: 37px;
+        }
+        @include md{
+            font-size: 26px;
+            line-height: 30px;
+        }
+        @include sm{
+            font-size: 24px;
+            line-height: 30px;
+        }
+    }
+    &__description{
+        color: var(--gray-700, #4E5566);
+        font-family: Inter;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 22px;
+        margin: 20px 0;
+        @include md{
+            margin: 15px 0;
+            font-size: 15px;
+            line-height: 15px;
+        }
+    }
+    &__image_content{
+        width: 50%;
+        @include sm{
+            width: 100%;
+            order: 1;
+            text-align: center;
+        }
+       
+    }
+    &__image{
+        width: 100%;
+        height: auto;
+        clip-path: polygon(9% 0, 100% 0%, 100% 100%, 0% 100%);
+        @include sm{
+            clip-path: none;
+            width: 80%;
+        }
+    }
+}

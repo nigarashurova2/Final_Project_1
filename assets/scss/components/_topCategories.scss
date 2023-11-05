@@ -1,0 +1,113 @@
+@import "./mixin";
+.top__categories{
+    padding: 50px 0;
+    .container{
+        max-width: 85%;
+        @include md{
+            max-width: 95%;
+        }
+        @include positionWithFlex(center, center, column)
+    }
+    &__title{
+        color: var(--gray-900, #1D2026);
+        font-family: Inter;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 48px;
+        letter-spacing: -0.4px;
+    }
+    &__content{
+        width: 100%;
+        @include positionWithGrid(4, 3, 20px);
+       
+        @include lg{
+            @include positionWithGrid(3, 4, 20px);
+        }
+        @include md{
+            @include positionWithGrid(2, 6, 20px);
+        }
+       
+        margin: 20px 0 30px;
+    }
+    &_item{
+        background-color: yellow;
+        padding: 15px;
+        box-shadow: -7px 15px 20px -15px rgba(21, 21, 21, 0.15);
+        @include positionWithFlex(start, center, row);
+        @include lg{
+            padding: 10px;
+        }
+       
+        &_info{
+            margin-left: 15px;
+        }
+        &:hover{
+            transform: scale(1.19);
+            transition: .4s ease-in-out;
+            cursor: pointer;
+        }
+    }
+    &_subtitle{
+        margin-bottom: 10px;
+    }
+    &_item_image{
+        background-color: white;
+        padding: 4px;
+    }
+    &__img{
+       max-width: 30px;
+       max-height: 30px;
+    }
+    &__browseAll{
+        display: flex;
+        align-items: center;
+        font-family: Inter;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        a{
+            margin-left: 10px;
+            text-decoration: none;
+            color: #FF6636;
+        
+        }
+    }
+}
+
+.category__item--light_purple{
+    background: var(--light-purple, #EBEBFF);
+    i{
+        color: var(--light-purple, #EBEBFF);
+    }
+}
+.category__item--light_green{
+    background: var(--light-green, #E1F7E3);
+    i{
+        color: var(--light-green, #E1F7E3);
+    }
+}
+.category__item--light_orange{
+    background: var(--light-orange, #FFF2E5);
+    i{
+        color: var(--light-orange, #FFF2E5);
+    }
+}
+.category__item--light_pink{
+    background: var(--light-pink, #FFF0F0);
+    i{
+        color: var(--light-pink, #FFF0F0);
+    }
+}
+.category__item--light_gray{
+    background: var(--light-gray, #F5F7FA);
+    i{
+        color: var(--light-gray, #F5F7FA);
+    }
+}
+.category__item--gray_white{
+    background:  #FFF;
+    .top__categories_item_image{
+        background-color: #FF6636;
+    }
+}

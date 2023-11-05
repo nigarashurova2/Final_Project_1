@@ -1,0 +1,179 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+input:focus, select:focus{
+	outline: none;
+	border: none;
+}
+
+
+// *****************************************************************************************************************////
+
+
+@import "./mixin";
+@import "./breakpoints";
+
+// button style //
+.main__button{
+	padding: 0 15px;
+	min-height: 40px;
+	border: none;
+	outline: none;
+	font-family: Inter;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 600;
+	text-transform: capitalize;
+	@include sm{
+		font-size: 14px;
+		padding: 10px ;
+	}
+}
+.main__button--bg_orange{
+	background: var(--orange, #FF6636);
+	color: white;
+	&:hover{
+		background-color: #FFEEE8;
+	    color: orange;
+	}
+}
+.main__button--bg_light_orange{
+	background-color: #FFEEE8;
+	color: orange;
+	transition: .3 ease-in;
+	&:hover{
+		background-color: rgb(245, 116, 70);
+	    color: #FFEEE8;
+	}
+}
+.main__button--bg_light_gray{
+	background: rgba(255, 255, 255, 0.05);
+	color: white;
+}
+.marginLeft10{
+	margin-left: 10px;
+}
+.mBottom10{
+	margin-bottom: 10;
+}
+// button style //
+
+.section__title{
+	color: var(--gray-900, #1D2026);
+	font-family: Inter;
+	font-size: 36px !important;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 48px; 
+	@include lg{
+		font-size: 30px !important;
+	}
+	@include md{
+		font-size: 30px !important;
+	}
+	@include sm{
+		font-size: 24px !important;
+	}
+}
+
+.text_color_gray{
+	color: var(--gray-500, #8C94A3);
+}
+
+.btn--brown{
+	background: var(--primary-100, #FFEEE8);
+	color: var(--primary-700, #993D20);
+}
+.btn--purple{
+	background: var(--secondary-100, #EBEBFF);
+	color: var(--secondary-700, #342F98);
+}
+.btn--success{
+	background: var(--success-100, #E1F7E3);
+	color: var(--success-700, #15711F);
+
+}
+.btn-warning{
+	background: var(--warning-100, #FFF2E5);
+	color: var(--warning-800, #65390C);
+}
+
+.cardTitle{
+	color: var(--gray-900, #1D2026);
+	font-family: Inter;
+	font-size: 32px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 40px; 
+	@include md{
+		font-size: 26px;
+	}
+}
+
+.text__gray{
+	color: var(--gray-500, #8C94A3);
+}
+
+.star__color--orange{
+	color: #FD8E1F;
+}
+
+.container{
+	@include sm{
+		max-width: 94%;
+	 }
+}
+
+.color__purple{
+	color: var(--secondary-700, #342F98);
+}
+
+.color__green{
+	color: var(--success-700, #15711F);
+}
+.color__orange{
+	color: var(--orange, #FF6636);
+}
+
+

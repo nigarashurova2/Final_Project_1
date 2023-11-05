@@ -1,0 +1,208 @@
+.footer{
+    background: var(--gray-900, #1D2026);
+    color: white;
+    font-family: Inter;
+    .container{
+        max-width: 90%;
+        @include xl{
+            max-width: 95% !important;
+        }
+        @include lg{
+            max-width: 94% !important;
+        }
+    }
+    &__top{
+        padding-top: 60px;
+
+    }
+    &__center{
+        padding: 60px 0;
+        @include lg{
+            padding: 20px 0;
+        }
+        &_title{
+            color: var(--gray-white, #FFF);
+            text-align: justify;
+            font-family: Inter;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 100%;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+            @include xl{
+                font-size: 14px;
+            }
+        }
+    }
+    &__bottom{
+        padding: 20px 0;
+        box-shadow: 0px 1px 0px 0px rgba(54, 59, 71, 0.50) inset;
+    }
+    &__box{
+        width: 100%;
+        &__main_title{
+            color: var(--gray-white, #FFF);
+            font-family: Inter;
+            font-size: 30px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 48px; 
+            margin-bottom: 20px;
+            @include xl{
+                font-size: 24px;
+            }
+        }
+        &_count{
+            color: #FFF;
+            text-align: justify;
+            font-family: Inter;
+            font-size: 40px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 48px;
+            margin-bottom: 5px;
+            @include lg{
+                font-size: 24px;
+            }
+        }
+        &_desc{
+            color: var(--gray-300, #B7BAC7);
+            text-align: justify;
+            font-family: Inter;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 22px;
+            margin: 15px 0;
+            @include lg{
+                font-size: 14px;
+            }
+        }
+        &_social{
+            display: flex;
+            li{
+                margin-right:10px;
+                padding: 14px;
+                background: rgba(54, 59, 71, 0.40);
+                @include lg{
+                    padding: 6px;
+                }
+                a{
+                font-size: 18px;
+                color: white;
+                }
+                &:hover{
+                    background: var(--primary-500, #FF6636);
+                }
+            }
+            .active{
+                background: var(--primary-500, #FF6636);
+            }
+        }
+        &__lang{
+            border: 1px solid var(--gray-800, #363B47);
+            background: var(--gray-900, #1D2026);
+            padding: 12px 16px 12px 18px;
+            color: var(--gray-500, #8C94A3);
+        }
+        &--align-center{
+            display: flex;
+            align-items: center;
+            height: 100%;
+        }
+    }
+    &__box-main{
+        padding-right: 100px;
+        @include lg{
+           padding-right: 20px;
+        }
+    }
+    &__box--margin{
+        margin: 40px 0;
+    }
+    &_list{
+
+        li{
+            margin: 10px 0;
+            a{
+                text-decoration: none;
+                color: white;
+                color: var(--gray-500, #8C94A3);
+                text-align: justify;
+                font-family: Inter;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 22px;
+                @include lg{
+                    font-size: 12px;
+                 }
+            }
+        }
+    }
+    &__app{
+        display: flex;
+        justify-content: space-evenly;
+        margin: 5px 0 10px;
+        align-items: center;
+        padding: 15px 20px;
+        background: rgba(54, 59, 71, 0.40);
+       
+        @include lg{
+            padding: 6px 12px;
+            
+         }
+    
+        img{
+            max-width: 25px;
+            max-height: 25px;
+            @include lg{
+               display: none;
+                
+             }
+        }
+        div{
+            margin-left: 5px;
+        }
+        &__download{
+            color: var(--gray-300, #B7BAC7);
+            font-family: Inter;
+            font-size: 10px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 10px; 
+            text-decoration: none;
+            @include lg{
+               font-size: 10px;
+             }
+            
+        }
+        &__title{
+            color: #FFF;
+            text-align: justify;
+            font-family: Inter;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 22px;
+            @include lg{
+               font-size: 12px;
+                
+             }
+        }
+    }
+    &__end_text{
+        @include lg{
+            font-size: 12px;
+         }
+    }
+   
+
+}
+
+.marginBottomXS{
+    @include lg{
+        margin-bottom: 40px;
+     }
+}

@@ -1,0 +1,49 @@
+@import "./mixin";
+.companies{
+    padding: 30px 0;
+    .container{
+        max-width: 90%;
+        @include positionWithGrid(6, 2, 20px);
+        @include lg{
+            max-width: 94%;
+            @include positionWithGrid(2, 6, 10px);
+         }
+    }
+    .company__item{
+        background: var(--gray-white, #FFF);
+        box-shadow: 0px 0px 32px 0px rgba(9, 26, 68, 0.07);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 5px 6px;
+        transition: .3s ease-in-out;
+        &:hover{
+            transform: scale(1.15);
+            box-shadow: 0px 20px 32px 0px rgba(17, 59, 165, 0.07);
+            cursor: pointer;
+        }
+    }
+    .company__info{
+        grid-column: 1 / span 2;
+        grid-row: 1 / span 2;
+        align-self: center;
+    }
+    .company__title{
+        color: var(--gray-900, #1D2026);
+        font-family: Inter;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 40px; 
+    }
+    .company__desc{
+        color: var(--gray-600, #6E7485);
+        font-family: Inter;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 22px;
+        margin-top: 10px;
+    }
+    
+}

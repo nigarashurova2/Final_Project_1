@@ -1,0 +1,108 @@
+@import "./mixin";
+.selling__courses{
+    padding: 30px 0 15px;
+    background: var(--gray-50, #F5F7FA);
+    font-family: Inter;
+    .container{
+        max-width: 90%;
+        @include lg{
+            max-width: 90%;
+        }
+        @include positionWithFlex(center, center, column)
+    }
+    &__title{
+        color: var(--gray-900, #1D2026);
+        font-family: Inter;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 48px;
+        letter-spacing: -0.4px;
+    }
+    &__content{
+        @include positionWithGrid(5, 2, 25px);
+        margin: 25px 0 30px;
+        @include xl{
+            @include positionWithGrid(3, 4, 20px);
+        }
+        @include md{
+            @include positionWithGrid(2, 5, 20px);
+        }
+       
+    }
+    &__item{
+        width: 100%;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        transition: .4s ease-in;
+        i{
+            color: #FD8E1F;
+        }
+        &:hover {
+            transform: scale(1.1);
+            box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+            .selling__courses__img{
+                transform: scale(1);
+                cursor: pointer;
+            }
+        }
+        
+        
+    }
+    &_img_content{
+        overflow: hidden;
+       
+    }
+    &__img{
+        width: 100%;
+        transform: scale(1.3);
+        transition: .3s ease-in-out;
+      
+    }
+    &__info{
+        padding: 14px 10px;
+    }
+    &__desc{
+        margin: 10px 0;
+        color: var(--gray-900, #1D2026);
+        font-family: Inter;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 20px; 
+    }
+    &__price{
+        color: var(--primary-500, #FF6636);
+        font-family: Inter;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 22px;
+    }
+    &__rating_students, &__price_category{
+        @include positionWithFlex(space-between, center, row)
+    }
+    &__category{
+        font-family: Inter;
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 12px;
+        text-transform: uppercase;
+        border: none;
+        padding: 5px 8px;
+    }
+    &__students{
+        color: var(--gray-700, #4E5566);
+        font-family: Inter;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 20px;
+        span{
+            color: var(--gray-500, #8C94A3);
+        }
+    }
+    
+    
+}
+

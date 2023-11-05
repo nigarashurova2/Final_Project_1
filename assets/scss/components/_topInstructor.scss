@@ -1,0 +1,94 @@
+@import "./mixin";
+.top__instructor{
+    width: 100%;
+    position: relative;
+    &::before{
+        background: var(--gray-50, #F5F7FA);
+        width: 100%;
+        height: 40%;
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
+    .container{
+        max-width: 90%;
+        border: 1px solid var(--gray-100, #E9EAF0);
+        background: var(--gray-white, #FFF);
+        padding: 40px;
+        @include lg{
+            max-width: 94%;
+         }
+        
+    }
+    &__title{
+        font-size: 36px;
+        margin-bottom: 15px
+    }
+    &__content{
+        @include positionWithGrid(5, 1, 15px);
+        @include lg{
+            @include positionWithGrid(3, 2, 15px);
+         }
+        @include md{
+            @include positionWithGrid(2, 3, 15px);
+         }
+        width: 100%;
+    }
+    .instructor{
+        width: 100%;
+        border: 1px solid var(--gray-100, #E9EAF0);
+        background: var(--gray-white, #FFF);
+       
+        &:hover{
+            transform: scale(1.09);
+            transition: all 0.4s linear;
+            cursor: pointer;
+        }
+        &__img_content{
+            width: 100%;
+            img{
+                width: 100%;
+            }
+        }
+        &__info{
+            text-align: center;
+            padding: 12px;
+        }
+        &__name, &__position{
+            text-align: center;
+            font-family: Inter;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 22px; 
+            letter-spacing: -0.14px;
+
+        }
+        &__position{
+            color: var(--gray-500, #8C94A3);
+        
+        }
+        &__name{
+            color: var(--gray-900, #1D2026);
+            font-weight: 500;
+        }
+        &_other_info{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            margin-top: 12px;
+            span{
+                color: var(--gray-500, #8C94A3);
+            }
+        }
+        &__rating{
+            i{
+                color: #FD8E1F;
+            }
+            
+        }
+    }
+}

@@ -1,0 +1,44 @@
+@import "./breakpoints";
+
+@mixin positionWithFlex($vertical, $horizontal, $direction){
+    display: flex;
+    justify-content: $vertical;
+    align-items: $horizontal;
+    flex-direction: $direction;
+}
+
+@mixin positionWithGrid($columns, $rows, $gapVal){
+    display: grid;
+    grid-template-columns: repeat($columns, 1fr);
+    grid-template-rows: repeat($rows, 1fr);
+    gap: $gapVal;
+}
+
+
+// Small devices
+@mixin sm {
+    @media (max-width: #{$screen-sm-max}) {
+        @content;
+    }
+ }
+ 
+ // Medium devices
+ @mixin md {
+    @media (max-width: #{$screen-md-max}) {
+        @content;
+    }
+ }
+ 
+ // Large devices
+ @mixin lg {
+    @media (max-width: #{$screen-lg-max}) {
+        @content;
+    }
+ }
+ 
+ // Extra large devices
+ @mixin xl {
+    @media (max-width: #{$screen-xl-max}) {
+        @content;
+    }
+ }

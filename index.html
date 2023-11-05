@@ -1,0 +1,1183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap cdn link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- Box Icons cdn link -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- IconMoon cdn link -->
+   <link rel="stylesheet" href="./assets/fonts/style.css">
+    <!-- Main Style CSS -->
+    <link rel="stylesheet" href="./assets/scss/main.css">
+    <title>Final__Project</title>
+</head>
+<body>
+    <!-- NAVIGATION__START -->
+    <div class="navigation">
+        <div class="top__nav">
+            <div class="container">
+                <ul class="top__nav__list">
+                    <li class="top__nav_item"><a href="#" class="top__nav_item_link top__nav_item_link--active">Home</a></li>
+                    <li class="top__nav_item"><a href="#" class="top__nav_item_link">Courses</a></li>
+                    <li class="top__nav_item"><a href="#" class="top__nav_item_link">About</a></li>
+                    <li class="top__nav_item"><a href="#" class="top__nav_item_link">Contact</a></li>
+                    <li class="top__nav_item"><a href="#" class="top__nav_item_link">Become an Instructor</a></li>
+                </ul>
+                <div class="top__nav_currency_languages">
+                    <select class="top__nav_currency top__nav_select">
+                        <option value="usd">USD</option>
+                        <option value="az">AZ</option>
+                    </select>
+                    <select class="top__nav_languages top__nav_select">
+                        <option value="english">English</option>
+                        <option value="azerbaijan">Azerbaijan</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="main__nav">
+            <div class="container">
+                <div class="main__nav_left">
+                    <div class="main__nav__logo">
+                        <img src="./assets/images/top_nav_logo.png" alt="nav_log_img" class="main__nav__img">
+                    </div>
+                    <select class="main__nav_categories">
+                      <option value="browse">Browse</option>  
+                    </select>
+            
+                    <label for="main__nav_search__input" class="main__nav_search">
+                        <i class='bx bx-search-alt-2' ></i>
+                        <input type="text" id="main__nav_search__input" placeholder="What do you want learn...">
+                    </label>
+                   
+                </div>
+                <div class="main__nav_right">
+                    <ul class="main__nav_list">
+                        <li><a href="#"><i class='bx bx-bell'></i></a></li>
+                        <li><a href="#"><i class='bx bx-heart'></i></a></li>
+                        <li><a href="#"><i class='bx bx-cart'></i></a></li>
+                    </ul>
+                    <button class="main__button main__button--bg_light_orange marginLeft10">Create Account</button>
+                    <button class="main__button main__button--bg_orange marginLeft10">Sign In</button>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+     <!-- NAVIGATION__END -->
+
+
+    <!-- HEADER__START -->
+    <header class="header">
+        <div class="header__main_content">
+            <div class="header__main_content__box">
+                <h1 class="header__title">Learn with expert anytime anywhere</h1>
+                <p class="header__description">Our mision is to help people to find the best course online and learn with expert anytime, anywhere.</p>
+                <button class="main__button main__button--bg_orange">Create Account</button>
+            </div>
+           
+        </div>
+        <div class="header__image_content">
+            <img src="./assets/images/main_section_img.jpg" alt="header__image" class="header__image">
+        </div>
+    </header>
+    <!-- HEADER__END -->
+
+
+    <!-- TOP_CATEGORY_SECTION__START -->
+    <section class="top__categories">
+        <div class="container">
+            <h2 class="top__categories__title section__title">Browse top category</h2>
+        
+            <div class="top__categories__content">
+               <div class="top__categories_item category__item--light_purple">
+                <div class="top__categories_item_image">
+                    <img src="./assets/images/top_categories_img1.png" alt="category_img1" class="top__categories__img">
+                </div>
+                <div class="top__categories_item_info">
+                    <h4 class="top__categories_subtitle">Label</h4>
+                    <p class="top__categories_desc">63,476 Courses</p>
+                </div>
+               </div>
+
+               <div class="top__categories_item category__item--light_green">
+                <div class="top__categories_item_image">
+                    <img src="./assets/images/top_categories_img2.png" alt="category_img2" class="top__categories__img">
+                </div>
+                <div class="top__categories_item_info">
+                    <h4 class="top__categories_subtitle">Business</h4>
+                    <p class="top__categories_desc">52,822 Courses</p>
+                </div>
+               </div>
+
+               <div class="top__categories_item category__item--light_orange">
+                <div class="top__categories_item_image">
+                    <img src="./assets/images/top_categories_img3.png" alt="category_img3" class="top__categories__img">
+                </div>
+                <div class="top__categories_item_info">
+                    <h4 class="top__categories_subtitle">Finance & Accounting</h4>
+                    <p class="top__categories_desc">33,841 Courses</p>
+                </div>
+               </div>
+
+               <div class="top__categories_item category__item--light_pink">
+                <div class="top__categories_item_image">
+                    <img src="./assets/images/top_categories_img4.png" alt="category_img4" class="top__categories__img">
+                </div>
+                <div class="top__categories_item_info">
+                    <h4 class="top__categories_subtitle">IT & Software</h4>
+                    <p class="top__categories_desc">22,649 Courses</p>
+                </div>
+               </div>
+
+               <div class="top__categories_item category__item--gray_white">
+                <div class="top__categories_item_image">
+                    <img src="./assets/images/top_categories_img5.png" alt="category_img5" class="top__categories__img">
+                </div>
+                <div class="top__categories_item_info">
+                    <h4 class="top__categories_subtitle">Personal Development</h4>
+                    <p class="top__categories_desc">20,126 Courses</p>
+                </div>
+               </div>
+
+               <div class="top__categories_item category__item--light_gray">
+                <div class="top__categories_item_image">
+                    <img src="./assets/images/top_categories_img6.png" alt="category_img6" class="top__categories__img">
+                </div>
+                <div class="top__categories_item_info">
+                    <h4 class="top__categories_subtitle">Office Productivity</h4>
+                    <p class="top__categories_desc">13,932 Courses</p>
+                </div>
+               </div>
+
+               <div class="top__categories_item category__item--light_purple">
+                <div class="top__categories_item_image">
+                    <img src="./assets/images/top_categories_img7.png" alt="category_img7" class="top__categories__img">
+                </div>
+                <div class="top__categories_item_info">
+                    <h4 class="top__categories_subtitle">Marketing</h4>
+                    <p class="top__categories_desc">12,068 Courses</p>
+                </div>
+               </div>
+
+               <div class="top__categories_item category__item--light_gray">
+                <div class="top__categories_item_image">
+                    <img src="./assets/images/top_categories_img8.png" alt="category_img8" class="top__categories__img">
+                </div>
+                <div class="top__categories_item_info">
+                    <h4 class="top__categories_subtitle">Photography & Video</h4>
+                    <p class="top__categories_desc">6,196 Courses</p>
+                </div>
+               </div>
+
+               <div class="top__categories_item category__item--light_orange">
+                <div class="top__categories_item_image">
+                    <img src="./assets/images/top_categories_img9.png" alt="category_img9" class="top__categories__img">
+                </div>
+                <div class="top__categories_item_info">
+                    <h4 class="top__categories_subtitle">Lifestyle</h4>
+                    <p class="top__categories_desc">2,736 Courses</p>
+                </div>
+               </div>
+
+               <div class="top__categories_item category__item--light_pink">
+                <div class="top__categories_item_image">
+                    <img src="./assets/images/top_categories_img10.png" alt="category_img10" class="top__categories__img">
+                </div>
+                <div class="top__categories_item_info">
+                    <h4 class="top__categories_subtitle">Design</h4>
+                    <p class="top__categories_desc">2,600 Courses</p>
+                </div>
+               </div>
+
+               <div class="top__categories_item category__item--light_green">
+                <div class="top__categories_item_image">
+                    <img src="./assets/images/top_categories_img11.png" alt="category_img11" class="top__categories__img">
+                </div>
+                <div class="top__categories_item_info">
+                    <h4 class="top__categories_subtitle">Health & Fitness</h4>
+                    <p class="top__categories_desc">1,678 Courses</p>
+                </div>
+               </div>
+
+               <div class="top__categories_item category__item--light_orange">
+                <div class="top__categories_item_image">
+                    <img src="./assets/images/top_categories_img12.png" alt="category_img12" class="top__categories__img">
+                </div>
+                <div class="top__categories_item_info">
+                    <h4 class="top__categories_subtitle">Music</h4>
+                    <p class="top__categories_desc">959 Courses</p>
+                </div>
+               </div>
+            </div>
+            <div class="top__categories__browseAll">
+                <p>We have more category & subcategory.</p>
+                <a href="#">Browse All <i class='bx bx-right-arrow-alt'></i></a>
+            </div>
+        </div>
+    </section>
+    <!-- TOP_CATEGORY_SECTION___END -->
+
+
+    <!-- SELLING_COURSES_SECTION_START -->
+    <section class="selling__courses">
+        <div class="container">
+            <h2 class="selling__courses__title section__title">Best selling courses</h2>
+            <div class="selling__courses__content">
+                <div class="selling__courses__item">
+                    <div class="selling__courses_img_content">
+                        <img src="./assets/images/courses1.png" alt="selling_courses_img" class="selling__courses__img">
+                    </div>
+                    <div class="selling__courses__info">
+                        <div class="selling__courses__price_category">
+                            <button class="selling__courses__category btn--brown">Design</button>
+                            <p class="selling__courses__price">$57</p>
+                        </div>
+                        <p class="selling__courses__desc">Machine Learning A-Z™: Hands-On Python & R In Data...</p>
+                        <div class="selling__courses__rating_students">
+                            <p class="selling__courses__rating"><i class='bx bxs-star'></i> 5.0</p>
+                            <p class="selling__courses__students">265.7K <span>students</span></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="selling__courses__item">
+                    <div class="selling__courses_img_content">
+                        <img src="./assets/images/courses2.png" alt="selling_courses_img" class="selling__courses__img">
+                    </div>
+                    <div class="selling__courses__info">
+                        <div class="selling__courses__price_category">
+                            <button class="selling__courses__category btn--purple">Developments</button>
+                            <p class="selling__courses__price">$57</p>
+                        </div>
+                        <p class="selling__courses__desc">The Complete 2021 Web Development Bootcamp</p>
+                        <div class="selling__courses__rating_students">
+                            <p class="selling__courses__rating"><i class='bx bxs-star'></i> 5.0</p>
+                            <p class="selling__courses__students">265.7K <span>students</span></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="selling__courses__item">
+                    <div class="selling__courses_img_content">
+                        <img src="./assets/images/courses3.png" alt="selling_courses_img" class="selling__courses__img">
+                    </div>
+                    <div class="selling__courses__info">
+                        <div class="selling__courses__price_category">
+                            <button class="selling__courses__category btn--success">Business</button>
+                            <p class="selling__courses__price">$57</p>
+                        </div>
+                        <p class="selling__courses__desc">Learn Python Programming Masterclass</p>
+                        <div class="selling__courses__rating_students">
+                            <p class="selling__courses__rating"><i class='bx bxs-star'></i> 5.0</p>
+                            <p class="selling__courses__students">265.7K <span>students</span></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="selling__courses__item">
+                    <div class="selling__courses_img_content">
+                        <img src="./assets/images/courses4.png" alt="selling_courses_img" class="selling__courses__img">
+                    </div>
+                    <div class="selling__courses__info">
+                        <div class="selling__courses__price_category">
+                            <button class="selling__courses__category btn--purple">Marketing</button>
+                            <p class="selling__courses__price">$57</p>
+                        </div>
+                        <p class="selling__courses__desc">The Complete Digital Marketing Course - 12 Courses in 1</p>
+                        <div class="selling__courses__rating_students">
+                            <p class="selling__courses__rating"><i class='bx bxs-star'></i> 5.0</p>
+                            <p class="selling__courses__students">265.7K <span>students</span></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="selling__courses__item">
+                    <div class="selling__courses_img_content">
+                        <img src="./assets/images/courses5.png" alt="selling_courses_img" class="selling__courses__img">
+                    </div>
+                    <div class="selling__courses__info">
+                        <div class="selling__courses__price_category">
+                            <button class="selling__courses__category btn--brown">IT & Software</button>
+                            <p class="selling__courses__price">$57</p>
+                        </div>
+                        <p class="selling__courses__desc">Reiki Level I, II and Master/Teacher Program</p>
+                        <div class="selling__courses__rating_students">
+                            <p class="selling__courses__rating"><i class='bx bxs-star'></i> 5.0</p>
+                            <p class="selling__courses__students">265.7K <span>students</span></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="selling__courses__item">
+                    <div class="selling__courses_img_content">
+                        <img src="./assets/images/courses6.png" alt="selling_courses_img" class="selling__courses__img">
+                    </div>
+                    <div class="selling__courses__info">
+                        <div class="selling__courses__price_category">
+                            <button class="selling__courses__category btn-warning">Music</button>
+                            <p class="selling__courses__price">$57</p>
+                        </div>
+                        <p class="selling__courses__desc">The Complete Foundation Stock Trading Course</p>
+                        <div class="selling__courses__rating_students">
+                            <p class="selling__courses__rating"><i class='bx bxs-star'></i> 5.0</p>
+                            <p class="selling__courses__students">265.7K <span>students</span></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="selling__courses__item">
+                    <div class="selling__courses_img_content">
+                        <img src="./assets/images/courses7.png" alt="selling_courses_img" class="selling__courses__img">
+                    </div>
+                    <div class="selling__courses__info">
+                        <div class="selling__courses__price_category">
+                            <button class="selling__courses__category btn--purple">Marketing</button>
+                            <p class="selling__courses__price">$57</p>
+                        </div>
+                        <p class="selling__courses__desc">Beginner to Pro in Excel: Financial Modeling and Valuati...</p>
+                        <div class="selling__courses__rating_students">
+                            <p class="selling__courses__rating"><i class='bx bxs-star'></i> 5.0</p>
+                            <p class="selling__courses__students">265.7K <span>students</span></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="selling__courses__item">
+                    <div class="selling__courses_img_content">
+                        <img src="./assets/images/courses8.png" alt="selling_courses_img" class="selling__courses__img">
+                    </div>
+                    <div class="selling__courses__info">
+                        <div class="selling__courses__price_category">
+                            <button class="selling__courses__category btn--success">Health & Fitness</button>
+                            <p class="selling__courses__price">$57</p>
+                        </div>
+                        <p class="selling__courses__desc">The Python Mega Course: Build 10 Real World Applications</p>
+                        <div class="selling__courses__rating_students">
+                            <p class="selling__courses__rating"><i class='bx bxs-star'></i> 5.0</p>
+                            <p class="selling__courses__students">265.7K <span>students</span></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="selling__courses__item">
+                    <div class="selling__courses_img_content">
+                        <img src="./assets/images/courses9.png" alt="selling_courses_img" class="selling__courses__img">
+                    </div>
+                    <div class="selling__courses__info">
+                        <div class="selling__courses__price_category">
+                            <button class="selling__courses__category btn--brown">Design</button>
+                            <p class="selling__courses__price">$57</p>
+                        </div>
+                        <p class="selling__courses__desc">Copywriting - Become a Freelance Copywriter, your ow...</p>
+                        <div class="selling__courses__rating_students">
+                            <p class="selling__courses__rating"><i class='bx bxs-star'></i> 5.0</p>
+                            <p class="selling__courses__students">265.7K <span>students</span></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="selling__courses__item">
+                    <div class="selling__courses_img_content">
+                        <img src="./assets/images/courses10.png" alt="selling_courses_img" class="selling__courses__img">
+                    </div>
+                    <div class="selling__courses__info">
+                        <div class="selling__courses__price_category">
+                            <button class="selling__courses__category btn-warning">Lifestyle</button>
+                            <p class="selling__courses__price">$57</p>
+                        </div>
+                        <p class="selling__courses__desc">Google Analytics Certification - Learn How To Pass The Exam</p>
+                        <div class="selling__courses__rating_students">
+                            <p class="selling__courses__rating"><i class='bx bxs-star'></i> 5.0</p>
+                            <p class="selling__courses__students">265.7K <span>students</span></p>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+    <!-- SELLING_COURSES_SECTION_END -->
+
+    
+    <!-- FEATURE_COURSES_SECTION_START -->
+    <section class="feature__courses">
+        <div class="container">
+          <div class="feature__courses__header">
+            <h2 class="feature__courses__title section__title">Our feature courses</h2>
+            <p class="feature__courses__desc_main">Vestibulum sed dolor sed diam mollis maximus vel nec dolor. Donec varius purus et eleifend porta.</p>
+          </div>
+          <div class="feature__courses__content">
+            <div class="feature__courses__item">
+                <div class="feature__courses__img_content">
+                    <img src="./assets/images/featureCourseImg1.png" alt="feature__courses__img" class="feature__courses__img">
+                </div>
+
+                <div class="feature__courses__info">
+                    <div class="feature__courses__price_category course__position"> 
+                        <button class="feature__courses__category btn--success">Health & Fitness</button>
+                        <p class="feature__courses__price">$14.00 <span class="color__gray">$26.00</span></p>
+                    </div>
+                    <p class="feature__courses__desc ">Investing In Stocks The Complete Course! 13 H...</p>
+                 
+
+                    <div class="course__instructor mt-2">
+                        <div class="course__profile">
+                            <img src="./assets/images/Photo.png" alt="course__profile_img" class="course__profile_img">
+                            <div class="course__profile_info">
+                                <p class="course__profile__position text__gray">Course by</p>
+                                <p class="course__profile__name">Kevin Gilbert</p>
+                            </div>
+                           
+                        </div>
+
+                        <p class="feature__courses__rating"><i class='bx bxs-star star__color--orange'></i> 5.0 <span class="text__gray">(357,914)</span></p>
+                    </div>
+
+                    <div class="course__funfact mt-3">
+                        <div class="course__user">
+                             <i class='bx bx-user color__purple'></i>
+                             <p>265.7K</p>
+                             <span class="text__gray"> students</span>
+                        </div>
+                        <div class="courses__barChart">
+                            <i class='bx bx-bar-chart color__orange' ></i>
+                            <span class="text__gray">Beginner</span>
+                        </div>
+                        <div class="feature__courses__clock">
+                            <i class='bx bx-time-five color__green' ></i>
+                            <span class="text__gray">6 hour</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="feature__courses__item">
+                <div class="feature__courses__img_content">
+                    <img src="./assets/images/featureCourseImg2.png" alt="feature__courses__img" class="feature__courses__img">
+                </div>
+
+                <div class="feature__courses__info">
+                    <div class="feature__courses__price_category course__position"> 
+                        <button class="feature__courses__category btn--purple">Personal Development</button>
+                        <p class="feature__courses__price">$14.00 <span class="color__gray">$26.00</span></p>
+                    </div>
+                    <p class="feature__courses__desc ">Investing In Stocks The Complete Course! 13 H...</p>
+                 
+
+                    <div class="course__instructor mt-2">
+                        <div class="course__profile">
+                            <img src="./assets/images/Photo.png" alt="course__profile_img" class="course__profile_img">
+                            <div class="course__profile_info">
+                                <p class="course__profile__position text__gray">Course by</p>
+                                <p class="course__profile__name">Kevin Gilbert</p>
+                            </div>
+                           
+                        </div>
+
+                        <p class="feature__courses__rating"><i class='bx bxs-star star__color--orange'></i> 5.0 <span class="text__gray">(357,914)</span></p>
+                    </div>
+
+                    <div class="course__funfact mt-3">
+                        <div class="course__user">
+                             <i class='bx bx-user color__purple'></i>
+                             <p>265.7K</p>
+                             <span class="text__gray"> students</span>
+                        </div>
+                        <div class="courses__barChart">
+                            <i class='bx bx-bar-chart color__orange' ></i>
+                            <span class="text__gray">Beginner</span>
+                        </div>
+                        <div class="feature__courses__clock">
+                            <i class='bx bx-time-five color__green' ></i>
+                            <span class="text__gray">6 hour</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="feature__courses__item">
+                <div class="feature__courses__img_content">
+                    <img src="./assets/images/featureCourseImg3.png" alt="feature__courses__img" class="feature__courses__img">
+                </div>
+
+                <div class="feature__courses__info">
+                    <div class="feature__courses__price_category course__position"> 
+                        <button class="feature__courses__category btn-warning">Productivity</button>
+                        <p class="feature__courses__price">$14.00 <span class="color__gray">$26.00</span></p>
+                    </div>
+                    <p class="feature__courses__desc ">Investing In Stocks The Complete Course! 13 H...</p>
+                 
+
+                    <div class="course__instructor mt-2">
+                        <div class="course__profile">
+                            <img src="./assets/images/Photo.png" alt="course__profile_img" class="course__profile_img">
+                            <div class="course__profile_info">
+                                <p class="course__profile__position text__gray">Course by</p>
+                                <p class="course__profile__name">Kevin Gilbert</p>
+                            </div>
+                           
+                        </div>
+
+                        <p class="feature__courses__rating"><i class='bx bxs-star star__color--orange'></i> 5.0 <span class="text__gray">(357,914)</span></p>
+                    </div>
+
+                    <div class="course__funfact mt-3">
+                        <div class="course__user">
+                             <i class='bx bx-user color__green'></i>
+                             <p>265.7K</p>
+                             <span class="text__gray"> students</span>
+                        </div>
+                        <div class="courses__barChart">
+                            <i class='bx bx-bar-chart color__orange' ></i>
+                            <span class="text__gray">Beginner</span>
+                        </div>
+                        <div class="feature__courses__clock">
+                            <i class='bx bx-time-five color__green' ></i>
+                            <span class="text__gray">6 hour</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="feature__courses__item">
+                <div class="feature__courses__img_content">
+                    <img src="./assets/images/featureCourseImg4.png" alt="feature__courses__img" class="feature__courses__img">
+                </div>
+
+                <div class="feature__courses__info">
+                    <div class="feature__courses__price_category course__position"> 
+                        <button class="feature__courses__category btn--success">Music</button>
+                        <p class="feature__courses__price">$14.00 <span class="color__gray">$26.00</span></p>
+                    </div>
+                    <p class="feature__courses__desc ">Investing In Stocks The Complete Course! 13 H...</p>
+                 
+
+                    <div class="course__instructor mt-2">
+                        <div class="course__profile">
+                            <img src="./assets/images/Photo.png" alt="course__profile_img" class="course__profile_img">
+                            <div class="course__profile_info">
+                                <p class="course__profile__position text__gray">Course by</p>
+                                <p class="course__profile__name">Kevin Gilbert</p>
+                            </div>
+                           
+                        </div>
+
+                        <p class="feature__courses__rating"><i class='bx bxs-star star__color--orange'></i> 5.0 <span class="text__gray">(357,914)</span></p>
+                    </div>
+
+                    <div class="course__funfact mt-3">
+                        <div class="course__user">
+                             <i class='bx bx-user color__purple'></i>
+                             <p>265.7K</p>
+                             <span class="text__gray"> students</span>
+                        </div>
+                        <div class="courses__barChart">
+                            <i class='bx bx-bar-chart color__orange' ></i>
+                            <span class="text__gray">Beginner</span>
+                        </div>
+                        <div class="feature__courses__clock">
+                            <i class='bx bx-time-five color__green' ></i>
+                            <span class="text__gray">6 hour</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            
+         </div> 
+        </div>
+    </section>
+    <!-- FEATURE_COURSES_SECTION_END -->
+
+
+
+    <!-- RECENT_COURSES_SECTION_START -->
+    <section class="recent__courses">
+        <div class="container">
+            <h2 class="recent__courses__title section__title">Recently added courses</h2>
+            <div class="recent__courses__content">
+                <div class="recent__course">
+                    <div class="recent__course__imgContent">
+                        <img src="./assets/images/recentCourse1.png" alt="recent_course" class="recent__course__img">
+                    </div>
+                     <div class="recent__course__info selling__courses__info">
+                        <div class="selling__courses__price_category">
+                            <button class="selling__courses__category btn--brown">Design</button>
+                            <p class="selling__courses__price">$57</p>
+                        </div>
+                        <p class="selling__courses__desc">Machine Learning A-Z™: Hands-On Python & R In Data...</p>
+                        <div class="selling__courses__rating_students">
+                            <p class="selling__courses__rating"><i class='bx bxs-star'></i> 5.0</p>
+                            <p class="selling__courses__students">265.7K <span>students</span></p>
+                        </div>
+                    </div>
+
+                    <div class="course__hoveredCard">
+                        <div class="course__hoveredCard__top">
+                            <button class="selling__courses__category btn--brown">Design</button>
+                            <p class="selling__courses__desc">Machine Learning A-Z™: Hands-On Python & R In Data...</p>
+                            <div class="course__instructor mt-2">
+                                <div class="course__profile">
+                                    <img src="./assets/images/Photo.png" alt="course__profile_img" class="course__profile_img">
+                                    <div class="course__profile_info">
+                                        <p class="course__profile__position text__gray">Course by</p>
+                                        <p class="course__profile__name">Kevin Gilbert</p>
+                                    </div>
+                                   
+                                </div>
+        
+                                <p class="feature__courses__rating"><i class='bx bxs-star star__color--orange'></i> 5.0 <span class="text__gray">(357,914)</span></p>
+                            </div>
+                            <div class="course__funfact mt-3">
+                                <div class="course__user">
+                                     <i class='bx bx-user color__purple'></i>
+                                     <p>265.7K</p>
+                                     <span class="text__gray"> students</span>
+                                </div>
+                                <div class="courses__barChart">
+                                    <i class='bx bx-bar-chart color__orange' ></i>
+                                    <span class="text__gray">Beginner</span>
+                                </div>
+                                <div class="feature__courses__clock">
+                                    <i class='bx bx-time-five color__green' ></i>
+                                    <span class="text__gray">6 hour</span>
+                                </div>
+                            </div>
+
+                            <div class="course__price_info">
+                                <p>$14.00 <span>$26.00</span></p>
+                                <button class="selling__courses__category btn--brown">56% off</button>
+                                <span class="course__i_heart btn--brown"><i class='bx bx-heart' ></i></span>
+                            </div>
+                        </div>
+
+                        <div class="course__hoveredCard__center">
+                            <p class="subtitle">What you’ll learn</p>
+                            <ul class="course__hoveredCard__list">
+                                <li><i class='bx bx-check color__green' ></i> <span>Learn to use Python professionally, learning both Python 2 and Python 3!</span></li>
+                                <li><i class='bx bx-check color__green' ></i><span>Create games with Python, like Tic Tac Toe and Blackjack!</span></li>
+                                <li><i class='bx bx-check color__green' ></i> <span>Create games with Python, like Tic Tac Toe and Blackjack!</span></li>
+                            </ul>
+                        </div>
+
+                        <div class="course__hoveredCard__end">
+                            <button class="main__button main__button--bg_orange"><i class='bx bx-basket' ></i> Add to Cart</button>
+                            <button class="main__button main__button--bg_light_orange">Course Detail</button>
+                        </div>
+                       
+                    </div>
+                </div>
+                <div class="recent__course">
+                    <div class="recent__course__imgContent">
+                        <img src="./assets/images/courses4.png" alt="recent_course" class="recent__course__img">
+                    </div>
+                     <div class="selling__courses__info">
+                        <div class="selling__courses__price_category">
+                            <button class="selling__courses__category btn--brown">Design</button>
+                            <p class="selling__courses__price">$57</p>
+                        </div>
+                        <p class="selling__courses__desc">Machine Learning A-Z™: Hands-On Python & R In Data...</p>
+                        <div class="selling__courses__rating_students">
+                            <p class="selling__courses__rating"><i class='bx bxs-star'></i> 5.0</p>
+                            <p class="selling__courses__students">265.7K <span>students</span></p>
+                        </div>
+                    </div>
+
+
+                    <div class="course__hoveredCard">
+                        <div class="course__hoveredCard__top">
+                            <button class="selling__courses__category btn--brown">Design</button>
+                            <p class="selling__courses__desc">Machine Learning A-Z™: Hands-On Python & R In Data...</p>
+                            <div class="course__instructor mt-2">
+                                <div class="course__profile">
+                                    <img src="./assets/images/Photo.png" alt="course__profile_img" class="course__profile_img">
+                                    <div class="course__profile_info">
+                                        <p class="course__profile__position text__gray">Course by</p>
+                                        <p class="course__profile__name">Kevin Gilbert</p>
+                                    </div>
+                                   
+                                </div>
+        
+                                <p class="feature__courses__rating"><i class='bx bxs-star star__color--orange'></i> 5.0 <span class="text__gray">(357,914)</span></p>
+                            </div>
+                            <div class="course__funfact mt-3">
+                                <div class="course__user">
+                                     <i class='bx bx-user color__purple'></i>
+                                     <p>265.7K</p>
+                                     <span class="text__gray"> students</span>
+                                </div>
+                                <div class="courses__barChart">
+                                    <i class='bx bx-bar-chart color__orange' ></i>
+                                    <span class="text__gray">Beginner</span>
+                                </div>
+                                <div class="feature__courses__clock">
+                                    <i class='bx bx-time-five color__green' ></i>
+                                    <span class="text__gray">6 hour</span>
+                                </div>
+                            </div>
+
+                            <div class="course__price_info">
+                                <p>$14.00 <span>$26.00</span></p>
+                                <button class="selling__courses__category btn--brown">56% off</button>
+                                <span class="course__i_heart btn--brown"><i class='bx bx-heart' ></i></span>
+                            </div>
+                        </div>
+
+                        <div class="course__hoveredCard__center">
+                            <p class="subtitle">What you’ll learn</p>
+                            <ul class="course__hoveredCard__list">
+                                <li><i class='bx bx-check color__green' ></i> <span>Learn to use Python professionally, learning both Python 2 and Python 3!</span></li>
+                                <li><i class='bx bx-check color__green' ></i><span>Create games with Python, like Tic Tac Toe and Blackjack!</span></li>
+                                <li><i class='bx bx-check color__green' ></i> <span>Create games with Python, like Tic Tac Toe and Blackjack!</span></li>
+                            </ul>
+                        </div>
+
+                        <div class="course__hoveredCard__end">
+                            <button class="main__button main__button--bg_orange"><i class='bx bx-basket' ></i> Add to Cart</button>
+                            <button class="main__button main__button--bg_light_orange">Course Detail</button>
+                        </div>
+                       
+                    </div>
+                </div>
+                <div class="recent__course">
+                    <div class="recent__course__imgContent">
+                        <img src="./assets/images/courses2.png" alt="recent_course" class="recent__course__img">
+                    </div>
+                     <div class="selling__courses__info">
+                        <div class="selling__courses__price_category">
+                            <button class="selling__courses__category btn--brown">Design</button>
+                            <p class="selling__courses__price">$57</p>
+                        </div>
+                        <p class="selling__courses__desc">Machine Learning A-Z™: Hands-On Python & R In Data...</p>
+                        <div class="selling__courses__rating_students">
+                            <p class="selling__courses__rating"><i class='bx bxs-star'></i> 5.0</p>
+                            <p class="selling__courses__students">265.7K <span>students</span></p>
+                        </div>
+                    </div>
+
+                    <div class="course__hoveredCard">
+                        <div class="course__hoveredCard__top">
+                            <button class="selling__courses__category btn--brown">Design</button>
+                            <p class="selling__courses__desc">Machine Learning A-Z™: Hands-On Python & R In Data...</p>
+                            <div class="course__instructor mt-2">
+                                <div class="course__profile">
+                                    <img src="./assets/images/Photo.png" alt="course__profile_img" class="course__profile_img">
+                                    <div class="course__profile_info">
+                                        <p class="course__profile__position text__gray">Course by</p>
+                                        <p class="course__profile__name">Kevin Gilbert</p>
+                                    </div>
+                                   
+                                </div>
+        
+                                <p class="feature__courses__rating"><i class='bx bxs-star star__color--orange'></i> 5.0 <span class="text__gray">(357,914)</span></p>
+                            </div>
+                            <div class="course__funfact mt-3">
+                                <div class="course__user">
+                                     <i class='bx bx-user color__purple'></i>
+                                     <p>265.7K</p>
+                                     <span class="text__gray"> students</span>
+                                </div>
+                                <div class="courses__barChart">
+                                    <i class='bx bx-bar-chart color__orange' ></i>
+                                    <span class="text__gray">Beginner</span>
+                                </div>
+                                <div class="feature__courses__clock">
+                                    <i class='bx bx-time-five color__green' ></i>
+                                    <span class="text__gray">6 hour</span>
+                                </div>
+                            </div>
+
+                            <div class="course__price_info">
+                                <p>$14.00 <span>$26.00</span></p>
+                                <button class="selling__courses__category btn--brown">56% off</button>
+                                <span class="course__i_heart btn--brown"><i class='bx bx-heart' ></i></span>
+                            </div>
+                        </div>
+
+                        <div class="course__hoveredCard__center">
+                            <p class="subtitle">What you’ll learn</p>
+                            <ul class="course__hoveredCard__list">
+                                <li><i class='bx bx-check color__green' ></i> <span>Learn to use Python professionally, learning both Python 2 and Python 3!</span></li>
+                                <li><i class='bx bx-check color__green' ></i><span>Create games with Python, like Tic Tac Toe and Blackjack!</span></li>
+                                <li><i class='bx bx-check color__green' ></i> <span>Create games with Python, like Tic Tac Toe and Blackjack!</span></li>
+                            </ul>
+                        </div>
+
+                        <div class="course__hoveredCard__end">
+                            <button class="main__button main__button--bg_orange"><i class='bx bx-basket' ></i> Add to Cart</button>
+                            <button class="main__button main__button--bg_light_orange">Course Detail</button>
+                        </div>
+                       
+                    </div>
+
+                </div>
+                <div class="recent__course">
+                    <div class="recent__course__imgContent">
+                        <img src="./assets/images/courses3.png" alt="recent_course" class="recent__course__img">
+                    </div>
+                     <div class="selling__courses__info">
+                        <div class="selling__courses__price_category">
+                            <button class="selling__courses__category btn--brown">Design</button>
+                            <p class="selling__courses__price">$57</p>
+                        </div>
+                        <p class="selling__courses__desc">Machine Learning A-Z™: Hands-On Python & R In Data...</p>
+                        <div class="selling__courses__rating_students">
+                            <p class="selling__courses__rating"><i class='bx bxs-star'></i> 5.0</p>
+                            <p class="selling__courses__students">265.7K <span>students</span></p>
+                        </div>
+                    </div>
+
+
+                    <div class="course__hoveredCard">
+                        <div class="course__hoveredCard__top">
+                            <button class="selling__courses__category btn--brown">Design</button>
+                            <p class="selling__courses__desc">Machine Learning A-Z™: Hands-On Python & R In Data...</p>
+                            <div class="course__instructor mt-2">
+                                <div class="course__profile">
+                                    <img src="./assets/images/Photo.png" alt="course__profile_img" class="course__profile_img">
+                                    <div class="course__profile_info">
+                                        <p class="course__profile__position text__gray">Course by</p>
+                                        <p class="course__profile__name">Kevin Gilbert</p>
+                                    </div>
+                                   
+                                </div>
+        
+                                <p class="feature__courses__rating"><i class='bx bxs-star star__color--orange'></i> 5.0 <span class="text__gray">(357,914)</span></p>
+                            </div>
+                            <div class="course__funfact mt-3">
+                                <div class="course__user">
+                                     <i class='bx bx-user color__purple'></i>
+                                     <p>265.7K</p>
+                                     <span class="text__gray"> students</span>
+                                </div>
+                                <div class="courses__barChart">
+                                    <i class='bx bx-bar-chart color__orange' ></i>
+                                    <span class="text__gray">Beginner</span>
+                                </div>
+                                <div class="feature__courses__clock">
+                                    <i class='bx bx-time-five color__green' ></i>
+                                    <span class="text__gray">6 hour</span>
+                                </div>
+                            </div>
+
+                            <div class="course__price_info">
+                                <p>$14.00 <span>$26.00</span></p>
+                                <button class="selling__courses__category btn--brown">56% off</button>
+                                <span class="course__i_heart btn--brown"><i class='bx bx-heart' ></i></span>
+                            </div>
+                        </div>
+
+                        <div class="course__hoveredCard__center">
+                            <p class="subtitle">What you’ll learn</p>
+                            <ul class="course__hoveredCard__list">
+                                <li><i class='bx bx-check color__green' ></i> <span>Learn to use Python professionally, learning both Python 2 and Python 3!</span></li>
+                                <li><i class='bx bx-check color__green' ></i><span>Create games with Python, like Tic Tac Toe and Blackjack!</span></li>
+                                <li><i class='bx bx-check color__green' ></i> <span>Create games with Python, like Tic Tac Toe and Blackjack!</span></li>
+                            </ul>
+                        </div>
+
+                        <div class="course__hoveredCard__end">
+                            <button class="main__button main__button--bg_orange"><i class='bx bx-basket' ></i> Add to Cart</button>
+                            <button class="main__button main__button--bg_light_orange">Course Detail</button>
+                        </div>
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+     <!-- RECENT_COURSES_SECTION_END -->
+
+
+    <!-- CTA_START -->
+    <section class="cta">
+        <div class="container">
+          <div class="cta__content">
+            <div class="cta__left">
+                <img src="./assets/images/ctaBgImage.png" alt="cta" class="cta_img">
+            </div>
+            <div class="cta__right">
+                <h4 class="cta__title cardTitle">Your teaching & earning steps</h4>
+                <div class="cta__steps">
+                    <div class="cta__step">
+                        <span class="cta__step_index btn--purple">1</span>
+                        <p class="cta__step_info">Apply to become instructor</p>
+                    </div>
+                    <div class="cta__step">
+                        <span class="cta__step_index btn--brown">2</span>
+                        <p class="cta__step_info">Build & edit your profile</p>
+                    </div>
+                    <div class="cta__step">
+                        <span class="cta__step_index btn-warning">3</span>
+                        <p class="cta__step_info">Create your new course</p>
+                    </div>
+                    <div class="cta__step">
+                        <span class="cta__step_index btn--success">4</span>
+                        <p class="cta__step_info">Start teaching & earning</p>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+    </section>
+    <!-- CTA_END -->
+
+    <!--TOP_INSTRUCTOR_START  -->
+    <section class="top__instructor">
+        <div class="container">
+            <h2 class="top__instructor__title section__title">Top instructor of the month</h2>
+            <div class="top__instructor__content">
+                <div class="instructor">
+                    <div class="instructor__img_content">
+                        <img src="./assets/images/topInstructor1.png" alt="instructor__img" class="instructor__img">
+                    </div>
+
+                    <div class="instructor__info">
+                        <p class="instructor__name">Devon Lane</p>
+                        <p class="instructor__position">Senior Developer</p>
+                        <div class="instructor_other_info">
+                            <p class="instructor__rating"><i class='bx bxs-star'></i> 5.0</p>
+                            <p class="instructor__students">265.7K <span>students</span></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="instructor">
+                    <div class="instructor__img_content">
+                        <img src="./assets/images/topInstructor2.png" alt="instructor__img" class="instructor__img">
+                    </div>
+
+                    <div class="instructor__info">
+                        <p class="instructor__name">Devon Lane</p>
+                        <p class="instructor__position">Senior Developer</p>
+                        <div class="instructor_other_info">
+                            <p class="instructor__rating"><i class='bx bxs-star'></i> 5.0</p>
+                            <p class="instructor__students">265.7K <span>students</span></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="instructor">
+                    <div class="instructor__img_content">
+                        <img src="./assets/images/topInstructor3.png" alt="instructor__img" class="instructor__img">
+                    </div>
+
+                    <div class="instructor__info">
+                        <p class="instructor__name">Devon Lane</p>
+                        <p class="instructor__position">Senior Developer</p>
+                        <div class="instructor_other_info">
+                            <p class="instructor__rating"><i class='bx bxs-star'></i> 5.0</p>
+                            <p class="instructor__students">265.7K <span>students</span></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="instructor">
+                    <div class="instructor__img_content">
+                        <img src="./assets/images/topInstructor4.png" alt="instructor__img" class="instructor__img">
+                    </div>
+
+                    <div class="instructor__info">
+                        <p class="instructor__name">Devon Lane</p>
+                        <p class="instructor__position">Senior Developer</p>
+                        <div class="instructor_other_info">
+                            <p class="instructor__rating"><i class='bx bxs-star'></i> 5.0</p>
+                            <p class="instructor__students">265.7K <span>students</span></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="instructor">
+                    <div class="instructor__img_content">
+                        <img src="./assets/images/topInstructor5.png" alt="instructor__img" class="instructor__img">
+                    </div>
+
+                    <div class="instructor__info">
+                        <p class="instructor__name">Devon Lane</p>
+                        <p class="instructor__position">Senior Developer</p>
+                        <div class="instructor_other_info">
+                            <p class="instructor__rating"><i class='bx bxs-star'></i> 5.0</p>
+                            <p class="instructor__students">265.7K <span>students</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--TOP_INSTRUCTOR_END  -->
+
+
+    <!-- COMPANIES_START -->
+    <div class="companies">
+        <div class="container">
+            <div class="company__info">
+                <h4 class="company__title">6.3k trusted companies</h4>
+                <p class="company__desc">Nullam egestas tellus at enim ornare tristique. Class aptent taciti sociosqu ad litora torquent per conubia nostra.</p>
+            </div>
+            <div class="company__item">
+                <img src="./assets/images/companyLogo1.png" alt="company1">
+            </div>
+            <div class="company__item">
+                <img src="./assets/images/companyLogo2.png" alt="company2">
+            </div>
+            <div class="company__item">
+                <img src="./assets/images/companyLogo3.png" alt="company3">
+            </div>
+            <div class="company__item">
+                <img src="./assets/images/companyLogo4.png" alt="company4">
+            </div>
+            <div class="company__item">
+                <img src="./assets/images/companyLogo5.png" alt="company5">
+            </div>
+            <div class="company__item">
+                <img src="./assets/images/companyLogo6.png" alt="company6">
+            </div>
+            <div class="company__item">
+                <img src="./assets/images/companyLogo7.png" alt="company7">
+            </div>
+            <div class="company__item">
+                <img src="./assets/images/companyLogo8.png" alt="company8">
+            </div>
+        </div>
+    </div>
+    <!-- COMPANIES_END -->
+
+
+    <!-- FOOTER_START -->
+    <footer class="footer">
+                <div class="footer__top">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xl-6 col-12">
+                                <div class="footer__box footer__box-main">
+                                    <p class="footer__box__main_title">Start learning with 67.1k students around the world.</p>
+                                    <div class="box__buttons">
+                                        <button class="main__button main__button--bg_orange">Join the Family</button>
+                                        <button class="main__button main__button--bg_light_gray marginLeft10">Browse all courses</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-2 col-4">
+                                <div class="footer__box footer__box--margin">
+                                    <p class="footer__box_count">6.3k</p>
+                                    <p class="footer__box_desc">Online courses</p>
+                                </div>
+                            </div>
+                            <div class="col-xl-2 col-4">
+                                <div class="footer__box footer__box--margin">
+                                    <p class="footer__box_count">26k</p>
+                                    <p class="footer__box_desc">Certified Instructor</p>
+                                </div>
+                            </div>
+                            <div class="col-xl-2 col-4">
+                                <div class="footer__box footer__box--margin">
+                                    <p class="footer__box_count">99.9%</p>
+                                    <p class="footer__box_desc">Sucess Rate</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+          
+                </div>
+
+                <div class="footer__center">
+                   <div class="container">
+                    <div class="row">
+                        <div class="col-xl-4 col-12">
+                            <div class="footer__box marginBottomXS">
+                              <img src="./assets/images/footer_nav_logo.png" alt="footer_logo" class="footer_logo">
+                              <p class="footer__box_desc">Aliquam rhoncus ligula est, non pulvinar elitconvallis nec. Donec mattis odio at.</p>
+                              <ul class="footer__box_social">
+                                <li class="footer__social_item"><a href="#"><i class='bx bxl-facebook'></i></a></li>
+                                <li class="footer__social_item"><a href="#"><i class='bx bxl-instagram' ></i></a></li>
+                                <li class="footer__social_item active"><a href="#"><i class='bx bxl-linkedin' ></i></a></li>
+                                <li class="footer__social_item"><a href="#"><i class='bx bxl-twitter' ></i></a></li>
+                                <li class="footer__social_item"><a href="#"><i class='bx bxl-youtube' ></i></a></li>
+                              </ul>
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-3">
+                            <div class="footer__box">
+                                <h4 class="footer__center_title">Top 4 Category</h4>
+                                <ul class="footer_list">
+                                    <li><a href="#">Development</a></li>
+                                    <li><a href="#">Finance & Accounting</a></li>
+                                    <li><a href="#">Design</a></li>
+                                    <li><a href="#">Business</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-3">
+                            <div class="footer__box">
+                                <h4 class="footer__center_title">Quick Links</h4>
+                                <ul class="footer_list">
+                                    <li><a href="#">About</a></li>
+                                    <li><a href="#">Become Instructor <i class='bx bx-right-arrow-alt'></i></a></li>
+                                    <li><a href="#">Contact</a></li>
+                                    <li><a href="#">Career</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-3">
+                            <div class="footer__box">
+                                <h4 class="footer__center_title">Support</h4>
+                                <ul class="footer_list">
+                                    <li><a href="#">Help Center</a></li>
+                                    <li><a href="#">FAQs</a></li>
+                                    <li><a href="#">Terms & Condition</a></li>
+                                    <li><a href="#">Privacy Policy</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-3">
+                            <div class="footer__box">
+                                <h4 class="footer__center_title">Downlaod our app</h4>
+                                <div class="footer__apps">
+                                    <div class="footer__app">
+                                        <img src="./assets/images/apple 1.png" alt="apple_download">
+                                        <div>
+                                            <a class="footer__app__download">Download now</a>
+                                            <p class="footer__app__title">App Store</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="footer__app">
+                                        <img src="./assets/images/google-play-5 1.png" alt="google_download">
+                                        <div>
+                                            <a class="footer__app__download">Download now</a>
+                                            <p class="footer__app__title">App Store</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                   </div>
+                </div>
+                <div class="footer__bottom">
+                   <div class="container">
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="footer__box footer__box--align-center">
+                                <p class="text_color_gray footer__end_text">© 2021 - Eduflex. Designed by Templatecookie. All rights reserved</p>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="footer__box text-end">
+                                <select name="lang" id="lang" class="footer__box__lang">
+                                    <option value="en">English</option>
+                                    <option value="az">Azerbaijan</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                   </div>
+                </div>
+    </footer>
+    <!-- FOOTER_END -->
+</body>
+</html>

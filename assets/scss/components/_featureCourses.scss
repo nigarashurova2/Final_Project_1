@@ -1,0 +1,162 @@
+@import "./mixin";
+.feature__courses{
+    // padding: 30px 0 15px;
+    position: relative;
+    &::before{
+        background: var(--gray-50, #F5F7FA);
+        width: 100%;
+        height: 40%;
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        @include md{
+            height: 20%;
+        }
+    }
+    font-family: Inter;
+    .container{
+        max-width: 90%;
+        @include positionWithFlex(center, center, column);
+        border: 1px solid var(--gray-100, #E9EAF0);
+        background: var(--gray-white, #FFF);
+        padding: 40px;
+        @include lg{
+            padding: 20px;
+            max-width: 94%;
+        }
+        @include md{
+            padding: 20px;
+            max-width: 90%;
+        }
+       
+        
+    }
+    &__header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 20px;
+        width: 100%;
+        @include md{
+            margin-bottom: 10px;
+        }
+    }
+    &__title{
+        font-size: 32px;
+        @include lg{
+            font-size: 26px !important;
+        }
+        @include md{
+            font-size: 26px !important;
+        }
+    }
+    &__desc_main{
+        color: var(--gray-700, #4E5566);
+        font-family: Inter;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20px; 
+        max-width: 30%;
+        @include xl{
+            max-width: 40%;
+         }
+        @include lg{
+           display: none;
+        }
+    }
+    &__desc{
+        color: var(--gray-700, #4E5566);
+        font-family: Inter;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20px; 
+        @include xl{
+            font-size: 14px;
+            margin: 5px 0;
+         }
+    }
+    &__content{
+        width: 100%;
+        @include positionWithGrid(2, 2, 20px);
+        @include xl{
+            @include positionWithGrid(1, 2, 10px);
+        }
+    }
+    &__item{
+       display: flex;
+       border: 1px solid var(--gray-100, #E9EAF0);
+       background: var(--gray-white, #FFF);
+       cursor: pointer;
+       @include lg{
+        font-size: 14px;
+      }
+      @include sm{
+       @include positionWithFlex(center, center, column);
+       margin: 10px 0;
+      }
+       &:hover img{
+        transform: scale(1.2);
+        
+    }      
+    }
+    &__img_content{
+        width: 35%;
+        overflow: hidden;
+        @include sm{
+            width: 100%;
+        }
+    }
+    &__img{
+        height: 100%;
+        width: 100%;
+        transform: scale(1);
+        transition: .3s ease-in-out;
+    }
+    &__info{
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        padding: 10px 15px;
+        width: 65%;
+        @include sm{
+            width: 100%;
+        }
+    }
+    &__price{
+        color: var(--gray-900, #1D2026);
+        font-family: Inter;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px; 
+        letter-spacing: -0.27px;
+    }
+    &__category{
+        padding: 6px;
+        font-size: 8px !important;
+    }
+    button{
+        color: var(--success-700, #15711F);
+        /* Labal/Small */
+        font-family: Inter;
+        font-size: 8px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 12px; /* 120% */
+        text-transform: uppercase;
+        border: none;
+    }
+    .course__position{
+        @include positionWithFlex(space-between, center, row)
+    }
+    .course__funfact{
+        border-top: 1px solid rgb(238, 226, 226);
+        padding: 10px 0;
+    }
+    
+    
+}

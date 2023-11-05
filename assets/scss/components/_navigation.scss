@@ -1,0 +1,139 @@
+@import "./colors";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Lobster+Two&display=swap');
+@import "./mixin";
+
+.navigation{
+    .top__nav{
+        width: 100%;
+        padding: 15px 0;
+        background:  map-get($colors, --gray-900);
+        
+        .container{
+            max-width: 98%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+           
+        }
+        &__list{
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+        &_item{
+            margin: 0 8px;
+            &_link{
+              color: white;
+              text-decoration: none;
+              color: var(--gray-500, #8C94A3);
+              color: var(--gray-white, #FFF);
+              font-family: Inter;
+              font-size: 14px;
+              font-style: normal;
+              font-weight: 500;
+            }
+            &_link--active{
+                color: white;
+            }
+        }
+        &_select{
+            outline: none;
+            border: none;
+            background-color: transparent;
+            color: var(--gray-400, #A1A5B3);
+            font-family: Inter;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            margin: 0 6px;
+            max-width: 70px;
+            
+            @include md {
+                display: none;
+            }
+        }
+        
+    }
+    .main__nav{
+        padding: 16px 0;
+        .container{
+            max-width: 98%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        &__img{
+            min-height: 40px;
+            min-width: 105px;
+            @include md{
+            min-height: 30px !important;
+            min-width: 50px !important;
+            }
+        }
+        &_categories{
+            margin: 0 20px;
+            width: 100%;
+            padding: 0 15px;
+            min-height: 35px;
+            border: 1px solid var(--gray-100, #E9EAF0);
+            background: var(--gray-white, #FFF);
+            @include md {
+                display: none;
+            }
+        }
+        &_search{
+            display: flex;
+            align-items: center;
+            position: relative;
+            padding: 0 15px;
+            min-height: 35px;
+            border: 1px solid var(--gray-100, #E9EAF0);
+            background: var(--gray-white, #FFF);
+            font-size: 16px;
+            @include lg {
+                display: none;
+            }
+            @include md {
+                display: none;
+            }
+            i{
+                font-size: 20px;
+            }
+            input{
+                border: none;
+                outline: none;
+                color: var(--gray-500, #8C94A3);
+                font-family: Inter;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 24px;
+                padding-left: 10px;
+              
+            }
+        }
+        &_left, &_right{
+            display: flex;
+            align-items: center;
+        }
+        &_list{
+            display: flex;
+            @include md {
+                display: none;
+            }
+            li{
+                margin: 0 5px;
+                a{
+                    color: black;
+                    font-weight: 600;
+                    transition: all .3s ease-in-out;
+                    font-size: 22px;
+                        &:hover {
+                            color: #FF6636;
+                            font-weight: 500;
+                        }
+                }
+            }
+        }
+    }
+}

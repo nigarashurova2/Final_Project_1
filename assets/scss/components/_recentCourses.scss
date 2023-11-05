@@ -1,0 +1,191 @@
+@import "./mixin";
+
+.recent__courses{
+    padding: 60px 0;
+    font-family: Inter;
+    .container{
+        max-width: 90%;
+        @include md{
+            max-width: 94%;
+        }
+        @include positionWithFlex(center, center, column)
+        
+    }
+    &__title{
+        color: var(--gray-900, #1D2026);
+        font-family: Inter;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 48px;
+        letter-spacing: -0.4px;
+        @include md{
+            font-size: 24px !important;
+        }
+      
+    }
+    &__content{
+        @include positionWithGrid(4, 1, 25px);
+        margin: 25px 0 30px;
+        @include md{
+            @include positionWithGrid(2, 2, 10px);
+        }
+      
+    }
+    .recent__course{
+        width: 100%;
+        border: 1px solid var(--gray-100, #E9EAF0);
+        background: var(--gray-white, #FFF);
+        position: relative;
+        &__imgContent{
+            overflow: hidden;
+            width: 100%;
+        }
+        &__img{
+            overflow: hidden;
+            width: 100%;
+            transform: scale(1);
+            transition: .3s ease-in-out;
+        }
+        .course__hoveredCard{
+            position: absolute;
+            left: 20%;
+            top: -20%;
+            z-index: 1;
+            width: 90%;
+            border: 1px solid var(--gray-100, #E9EAF0);
+            background: var(--gray-white, #FFF);
+            box-shadow: 0px 4px 20px 0px rgba(29, 32, 38, 0.12);
+            display: none;
+            @include lg{
+               display: none;
+               left: 10%;
+            }
+            
+            &__top{
+                padding: 15px;
+            }
+            &__center{
+                padding: 15px;
+                border-bottom: 1px solid rgb(230, 222, 222);
+                border-top: 1px solid rgb(230, 222, 222);
+            }
+            &__end{
+                width: 100%;
+                padding: 15px;
+                button{
+                    width: 100%;
+                    font-size: 14px;
+                    margin: 4px 0;
+                    i{
+                        font-size: 16px;
+                        font-weight: 500;
+                    }
+                }
+            }
+            &__list{
+                margin: 0;
+                padding: 0;
+                list-style: none;
+                margin-top: 10px;
+                li{
+                    font-size: 14px;
+                    color: var(--gray-600, #6E7485);
+                    font-family: Inter;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 22px; 
+                    i{
+                        font-size: 18px;
+                        font-weight: 500;
+                    }
+                }
+            }
+
+        }
+        &:hover {
+            cursor: pointer;
+            &__img{
+                transform: scale(1.3);
+                cursor: pointer;
+            }
+            .course__hoveredCard{
+                display: block;
+                transition: .5s ease-in-out;
+                @include lg{
+                    display: block;
+                    left: 10%;
+                 }
+            }
+        }
+       
+       
+      
+    }
+  
+    
+    
+}
+.course__instructor{
+    @include positionWithFlex(space-between, center, row);
+    width: 100%;
+    p{
+        font-family: Inter;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 22px; 
+    }
+    .course__profile{
+        @include positionWithFlex(center, center, row);
+        &_info{
+            margin-left: 15px;
+           
+        }
+        
+    }
+    img{
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+    }
+}
+.course__funfact{
+    width: 100%;
+    @include positionWithFlex(space-between, center, row);
+    div{
+        @include positionWithFlex(start, center, row);
+    }
+    p, span{
+        font-family: Inter;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 22px; 
+    }
+    span{
+        color: var(--gray-700, #4E5566);
+        margin: 0 4px;
+    }
+    i{
+        font-size: 16px;
+        font-weight: 500;
+        margin-right: 5px;
+    }
+}
+.course__price_info{
+    margin: 15px 0;
+    @include positionWithFlex(space-between, center, row);
+    font-size: 14px;
+    span{
+        color: gray;
+    }
+}
+.course__i_heart{
+    padding: 5px;
+    font-weight: 500;
+    font-size: 14px;
+    color: orangered !important;
+}
+
